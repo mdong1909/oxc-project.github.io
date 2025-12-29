@@ -190,6 +190,7 @@ export const sharedConfig = defineConfig({
           ".oxlintrc": localIconLoader(import.meta.url, "../../public/logo-without-border.svg"),
         },
       }),
+      llmstxt(),
     ],
     resolve: {
       alias: [

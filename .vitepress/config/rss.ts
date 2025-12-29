@@ -72,7 +72,7 @@ export const rssConfig = defineConfig({
       },
     });
     // `createMarkdownRenderer` returns a cached global renderer, so the above modifications will be applied to the next rendering
-    const posts = await createContentLoader("blog/*.md", {
+    const posts = await createContentLoader(["blog/*.md", "!blog/index.md"], {
       excerpt: true,
       render: true,
     }).load();
